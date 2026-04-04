@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import TextType from '../components/TextType'
-import GradualBlur from '../components/GradualBlur'
 
 function Home() {
   return (
@@ -106,62 +105,41 @@ function Home() {
         </div>
       </section>
 
-      {/* Approach Section with GradualBlur */}
-      <section className="mt-64 relative" style={{ height: '600px', overflow: 'hidden' }}>
-        <div style={{ height: '100%', overflowY: 'auto', padding: '2rem 0' }}>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-7 space-y-6">
-              <p className="text-foreground-muted font-bold text-[11px] uppercase tracking-[0.2em]">
-                设计理念
-              </p>
-              <h3 className="text-4xl font-semibold text-white tracking-tight leading-tight">
-                超越美学：<br />设计是功能性的工具
-              </h3>
-              <p className="text-foreground-muted text-lg leading-relaxed max-w-xl">
-                我相信高端设计不仅关乎外观，更在于如何引导焦点。我的流程包括深入研究、严格原型设计，以及对交互细节的细致关注，让数字工具感觉无缝而专业。
-              </p>
-              <div className="flex gap-8 pt-4">
-                <div className="flex flex-col gap-2">
-                  <span className="text-white font-bold text-2xl tracking-tighter">04+</span>
-                  <span className="text-foreground-muted text-[10px] uppercase font-bold tracking-widest">年经验</span>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <span className="text-white font-bold text-2xl tracking-tighter">12+</span>
-                  <span className="text-foreground-muted text-[10px] uppercase font-bold tracking-widest">全球项目</span>
-                </div>
-              </div>
-              <p className="text-foreground-muted text-lg leading-relaxed max-w-xl pt-8">
-                我的设计哲学强调系统思维和细节完美主义的平衡。每个项目都从深入的用户研究开始，通过数据驱动的决策和迭代优化，最终实现卓越的用户体验。
-              </p>
-              <p className="text-foreground-muted text-lg leading-relaxed max-w-xl">
-                在过去的项目中，我专注于构建可扩展的设计系统，确保品牌一致性的同时保持设计的灵活性。我相信优秀的设计应该是无形的——用户不会注意到设计本身，但会感受到流畅、直观的体验。
-              </p>
+      {/* Approach Section */}
+      <section className="mt-64 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="md:col-span-7 space-y-6">
+          <p className="text-foreground-muted font-bold text-[11px] uppercase tracking-[0.2em]">
+            设计理念
+          </p>
+          <h3 className="text-4xl font-semibold text-white tracking-tight leading-tight">
+            超越美学：<br />设计是功能性的工具
+          </h3>
+          <p className="text-foreground-muted text-lg leading-relaxed max-w-xl">
+            我相信高端设计不仅关乎外观，更在于如何引导焦点。我的流程包括深入研究、严格原型设计，以及对交互细节的细致关注，让数字工具感觉无缝而专业。
+          </p>
+          <div className="flex gap-8 pt-4">
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-bold text-2xl tracking-tighter">04+</span>
+              <span className="text-foreground-muted text-[10px] uppercase font-bold tracking-widest">年经验</span>
             </div>
-            
-            <div className="md:col-span-5 relative h-[300px] flex items-center justify-center">
-              {/* Geometric Wireframe with gradient colors */}
-              <div className="relative w-64 h-64">
-                <div className="absolute inset-0 border border-accent/20 rounded-full animate-pulse-slow" />
-                <div className="absolute inset-4 border border-accent-bright/30 rounded-full" />
-                <div className="absolute inset-8 border border-accent-purple/20 rounded-full" />
-                <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent" />
-                <div className="absolute top-0 left-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-accent-bright to-transparent" />
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-accent-purple/40 rotate-45" />
-              </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-bold text-2xl tracking-tighter">12+</span>
+              <span className="text-foreground-muted text-[10px] uppercase font-bold tracking-widest">全球项目</span>
             </div>
           </div>
         </div>
-
-        <GradualBlur
-          target="parent"
-          position="bottom"
-          height="8rem"
-          strength={3}
-          divCount={8}
-          curve="bezier"
-          exponential={true}
-          opacity={1}
-        />
+        
+        <div className="md:col-span-5 relative h-[300px] flex items-center justify-center">
+          {/* Geometric Wireframe with gradient colors */}
+          <div className="relative w-64 h-64">
+            <div className="absolute inset-0 border border-accent/20 rounded-full animate-pulse-slow" />
+            <div className="absolute inset-4 border border-accent-bright/30 rounded-full" />
+            <div className="absolute inset-8 border border-accent-purple/20 rounded-full" />
+            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent" />
+            <div className="absolute top-0 left-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-accent-bright to-transparent" />
+            <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-accent-purple/40 rotate-45" />
+          </div>
+        </div>
       </section>
     </div>
   )
