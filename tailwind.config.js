@@ -13,9 +13,12 @@ export default {
         'background-elevated': '#0a0a0c',
         'surface': 'rgba(255, 255, 255, 0.05)',
         'surface-hover': 'rgba(255, 255, 255, 0.08)',
-        'foreground': '#EDEDEF',
-        'foreground-muted': '#8A8F98',
-        'foreground-subtle': 'rgba(255, 255, 255, 0.60)',
+        // 文字颜色 - 使用纯白色+不同透明度
+        'foreground': 'rgba(255, 255, 255, 1)',        // 主标题 - 100%白色
+        'foreground-primary': 'rgba(255, 255, 255, 0.95)',  // 次要标题 - 95%白色
+        'foreground-secondary': 'rgba(255, 255, 255, 0.65)', // 正文 - 65%白色
+        'foreground-muted': 'rgba(255, 255, 255, 0.65)',     // 辅助文字 - 65%白色
+        'foreground-subtle': 'rgba(255, 255, 255, 0.45)',    // 提示文字 - 45%白色
         // 新的蓝紫渐变色系统
         'accent': '#2C7CFD',  // 荧光青蓝 (主色调)
         'accent-bright': '#9F2AD2',  // 荧光紫 (辅助色)
